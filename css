@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  line-height: 1.6;
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+}
+
+/* Header */
+.header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffe600;
+}
+
+.nav a {
+  margin-left: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #ff4500;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #ff8c00, #ff4500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  animation: glow 2s infinite;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.cta-button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #333;
+}
+
+/* Glow Effect */
+@keyframes glow {
+  0% { text-shadow: 0 0 10px #fff, 0 0 20px #cc0d0ddb, 0 0 30px #ff8c00; }
+  100% { text-shadow: 0 0 20px #fff, 0 0 30px #a6141ccc, 0 0 40px #ff8c00; }
+}
+
+/* About Section */
+.about-section, .services-section, .contact-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about-cards, .services-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card, .service-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.card:hover, .service-card:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Portfolio Section */
+.portfolio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.portfolio-item {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+.footer {
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  color: #ff8c00;
+}
